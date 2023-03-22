@@ -14,6 +14,11 @@
 		C74E61CF29CA0300000D7899 /* NotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61CE29CA0300000D7899 /* NotesAppTests.swift */; };
 		C74E61D929CA0300000D7899 /* NotesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61D829CA0300000D7899 /* NotesAppUITests.swift */; };
 		C74E61DB29CA0300000D7899 /* NotesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61DA29CA0300000D7899 /* NotesAppUITestsLaunchTests.swift */; };
+		C74E61EC29CA0374000D7899 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61EB29CA0374000D7899 /* View+.swift */; };
+		C74E61EF29CA045A000D7899 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E61EE29CA045A000D7899 /* Home.swift */; };
+		C769B56729CA93170023A4F1 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769B56629CA93170023A4F1 /* NoteModel.swift */; };
+		C769B56A29CA94320023A4F1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769B56929CA94320023A4F1 /* Colors.swift */; };
+		C769B56C29CA9E140023A4F1 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769B56B29CA9E140023A4F1 /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		C74E61D429CA0300000D7899 /* NotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74E61D829CA0300000D7899 /* NotesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppUITests.swift; sourceTree = "<group>"; };
 		C74E61DA29CA0300000D7899 /* NotesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C74E61EB29CA0374000D7899 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		C74E61EE29CA045A000D7899 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C769B56629CA93170023A4F1 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		C769B56929CA94320023A4F1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C769B56B29CA9E140023A4F1 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,9 @@
 		C74E61B029CA02FE000D7899 = {
 			isa = PBXGroup;
 			children = (
+				C74E61E729CA0306000D7899 /* Shared */,
+				C74E61E929CA0314000D7899 /* macOS */,
+				C74E61E829CA030E000D7899 /* iOS */,
 				C74E61BB29CA02FE000D7899 /* NotesApp */,
 				C74E61CD29CA0300000D7899 /* NotesAppTests */,
 				C74E61D729CA0300000D7899 /* NotesAppUITests */,
@@ -127,6 +140,64 @@
 				C74E61DA29CA0300000D7899 /* NotesAppUITestsLaunchTests.swift */,
 			);
 			path = NotesAppUITests;
+			sourceTree = "<group>";
+		};
+		C74E61E729CA0306000D7899 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C769B56829CA94290023A4F1 /* Constant */,
+				C769B56529CA930F0023A4F1 /* Model */,
+				C74E61ED29CA0451000D7899 /* View */,
+				C74E61EA29CA0368000D7899 /* Extension */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C74E61E829CA030E000D7899 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		C74E61E929CA0314000D7899 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		C74E61EA29CA0368000D7899 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C74E61EB29CA0374000D7899 /* View+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C74E61ED29CA0451000D7899 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C74E61EE29CA045A000D7899 /* Home.swift */,
+				C769B56B29CA9E140023A4F1 /* BlurView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C769B56529CA930F0023A4F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C769B56629CA93170023A4F1 /* NoteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C769B56829CA94290023A4F1 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				C769B56929CA94320023A4F1 /* Colors.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C769B56729CA93170023A4F1 /* NoteModel.swift in Sources */,
+				C769B56C29CA9E140023A4F1 /* BlurView.swift in Sources */,
+				C769B56A29CA94320023A4F1 /* Colors.swift in Sources */,
 				C74E61BF29CA02FE000D7899 /* ContentView.swift in Sources */,
+				C74E61EC29CA0374000D7899 /* View+.swift in Sources */,
+				C74E61EF29CA045A000D7899 /* Home.swift in Sources */,
 				C74E61BD29CA02FE000D7899 /* NotesAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
